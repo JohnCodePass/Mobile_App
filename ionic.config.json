@@ -1,0 +1,7 @@
+{
+  "name": "RTDmobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
