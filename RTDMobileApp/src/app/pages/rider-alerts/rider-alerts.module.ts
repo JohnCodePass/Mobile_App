@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RiderAlertsPageRoutingModule } from './rider-alerts-routing.module';
 
 import { RiderAlertsPage } from './rider-alerts.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RiderAlertsPageRoutingModule
+    RiderAlertsPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RiderAlertsPage]
 })

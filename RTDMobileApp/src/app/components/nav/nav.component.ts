@@ -10,5 +10,7 @@ export class NavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-
+  a(){
+    alert("What's Up");
+  }
 }
