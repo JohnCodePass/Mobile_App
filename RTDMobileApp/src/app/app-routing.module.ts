@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'forgot-password',
-    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
-  },
-  {
     path: 'favorites-main',
     loadChildren: () => import('./pages/favorites/favorites-main/favorites-main.module').then( m => m.FavoritesMainPageModule)
   },
