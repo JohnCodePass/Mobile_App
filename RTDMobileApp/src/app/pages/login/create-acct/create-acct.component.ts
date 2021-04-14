@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-acct',
@@ -7,8 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAcctComponent implements OnInit {
 
-  constructor() { }
+  showMe: boolean = true;
+  fieldTextType: boolean = true;
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+  goToLoginPage() {
+    this.router.navigateByUrl('login');
 
+  }
+  goToAdminPage() {
+    this.router.navigateByUrl('AdminAcct');
+
+  }
+
+  hideComponent() {
+    this.showMe = !this.showMe;
+  }
+  toggleFieldTextType() {
+    this.fieldTextType = !this.fieldTextType;
+  }
 }

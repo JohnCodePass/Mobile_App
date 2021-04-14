@@ -1,3 +1,47 @@
-<p>
-  create-acct works!
-</p>
+
+
+<ion-content>
+  <ion-grid class="bg">
+    <ion-row class="ion-justify-content-center topFormSpacing">
+      <ion-col size="10">
+        <ion-label for="firstName" class="labelFont">
+          Username*
+        </ion-label>
+        <ion-input class="formBg labelSpacing" type="text" placeholder="Username" id="firstName"></ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label for="lastName" class="labelFont">
+          Email*
+        </ion-label>
+        <ion-input class="formBg labelSpacing" type="text" placeholder="Email" id="lastName"></ion-input>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-justify-content-center topFormSpacing">
+      <ion-col size="10">
+        <ion-label for="phoneNumber" class="labelFont">
+          Password*
+        </ion-label>
+        <ion-input class="formBg labelSpacing" type="tel" placeholder="Password" id="phoneNumber"></ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label for="email" class="labelFont">
+          Re-Enter Password*
+        </ion-label>
+        <ion-input class="formBg labelSpacing" type="email" placeholder="Re-Enter Password" id="email"></ion-input>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-justify-content-center topFormSpacing">
+      <ion-col size="10">
+        <ion-button style="height:45px" expand="block" class="font22 borderRadius marginTop">Reset Password
+        </ion-button>
+      </ion-col>
+      <ion-col size="10" class="ion-text-center ">
+        <h4 class="cancelAcctFont" (click)="goToLoginPage()">Cancel Account Creation</h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
