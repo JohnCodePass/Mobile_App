@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 })
 export class CreateAcctComponent implements OnInit {
 
-  showMe: boolean = true;
-  fieldTextType: boolean = true;
+  showPW: boolean = true;
+  fieldTextTypePW: boolean = true;
   constructor(private router: Router) { }
 
   ngOnInit() { }
@@ -22,10 +22,10 @@ export class CreateAcctComponent implements OnInit {
 
   }
 
-  hideComponent() {
-    this.showMe = !this.showMe;
+  hideComponentPW() {
+    this.showPW = !this.showPW;
   }
-  toggleFieldTextType() {
-    this.fieldTextType = !this.fieldTextType;
+  toggleFieldTextTypePW() {
+    this.fieldTextTypePW = !this.fieldTextTypePW;
   }
 }

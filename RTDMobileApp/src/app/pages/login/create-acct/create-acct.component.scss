@@ -1,57 +1,74 @@
-.bg{
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
+.bg {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
-.noPad{
-    padding: 0;
+.noPad {
+  padding: 0;
 }
-.noMarg{
-    margin: 0;
+.noMarg {
+  margin: 0;
 }
-.noBottomMarg{
-    margin-bottom: 0;
+.noBottomMarg {
+  margin-bottom: 0;
 }
-.noBottomPad{
-    padding-bottom: 0;
+.noBottomPad {
+  padding-bottom: 0;
 }
-.noTopPad{
-    padding-top: 0;
-}
-/* Form styling and label styling */
-
-.formBg{
-    background-color: white;
-    color: black;
-    border-radius: 6px;
-}
-.topFormSpacing{
-    margin-top: 1em;
-}
-
-.labelSpacing{
-    margin-top: .3em;
-}
-.labelFont{
-    font-size: .75rem;
-    color: rgba(207, 206, 206, 0.5);
-}
-
-
-.cancelAcctFont{
-    color: rgba(207, 206, 206, 0.5);
-    cursor: pointer;
+.noTopPad {
+  padding-top: 0;
 }
 /* Form styling and label styling */
 
-.submitBtn{
-    background-color: #A9EBF9;
-    color: black;
+.formBg {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
-.btnradius{
-  border-radius: 6px;  
+.topFormSpacing {
+  margin-top: 1em;
 }
 
+.marginTop{
+margin-top: 20px;
+}
 
+.marginTopimg {
+  margin-top: 60px;
+}
 
+.labelSpacing {
+  margin-top: 0.3em;
+}
+.labelFont {
+  font-size: 0.75rem;
+  color: #004E99;
+}
 
+.cancelAcctFont {
+  color: rgba(207, 206, 206, 0.5);
+  cursor: pointer;
+}
+
+.createAcctFont {
+  color: #004E99;
+  font-size: 36px;
+}
+/* Form styling and label styling */
+
+.submitBtn {
+  background-color: #a9ebf9;
+  color: black;
+}
+.btnradius {
+  --border-radius: 10px !important;
+}
+
+.item-inner {
+  flex-direction: row-reverse;
+}
+
+.visibility {
+  padding-right: 10px;
+  color: #555555;
+}

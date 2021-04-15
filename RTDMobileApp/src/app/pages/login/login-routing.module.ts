@@ -8,11 +8,11 @@ const routes: Routes = [
   {
     path: '',
     component: LoginPage,
-
+    
   },
   {
-    path: 'createAcct',
-    component: CreateAcctComponent,
+      path: 'createAcct',
+      component: CreateAcctComponent,
   },
 ];
 
