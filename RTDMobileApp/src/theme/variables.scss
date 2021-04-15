@@ -2,6 +2,7 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
 :root {
   
   /** primary **/
@@ -236,3 +237,5 @@
   }
 }
 
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
