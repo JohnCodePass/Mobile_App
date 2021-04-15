@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { RiderAlertsPageRoutingModule } from './rider-alerts-routing.module';
+import  {ComponentsModule} from '../../components/components.module'
 
 import { RiderAlertsPage } from './rider-alerts.page';
 
@@ -13,7 +14,8 @@ import { RiderAlertsPage } from './rider-alerts.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RiderAlertsPageRoutingModule
+    RiderAlertsPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RiderAlertsPage]
 })
