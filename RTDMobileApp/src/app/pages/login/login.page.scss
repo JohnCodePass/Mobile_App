@@ -1,0 +1,73 @@
+.bg {
+  background: white;
+  color: black;
+}
+.borderRadius {
+  --border-radius: 10px !important;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.create {
+  color: #004E99;
+  text-decoration: underline;
+}
+.create:hover {
+  color: #1D85E9;
+  text-decoration: underline;
+}
+
+.forgotpw:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* ~~~  Margins  ~~~ */
+.marginTop {
+  margin-top: 60px;
+}
+.marginTop2 {
+  margin-top: 40px;
+}
+.marginTop3 {
+  margin-top: 15px;
+}
+.marginTopimg {
+  margin-top: 140px;
+}
+/* ~~~  Font Sizes  ~~~ */
+.font18 {
+  font-size: 18px;
+  text-align: center;
+}
+.font21 {
+  font-size: 21px;
+}
+.font22 {
+  font-size: 22px;
+}
+/* ~~~  Shadow DOM Manipulation  ~~~ */
+ion-input {
+  text-indent: 15px;
+}
+ion-textarea {
+  text-indent: 15px;
+}
+ion-button {
+  text-transform: none;
+}
+/* ~~~  Password input styling  ~~~ */
+.input[type="text"] {
+  text-overflow: ellipsis;
+}
+.input[type="text"]:hover {
+  text-overflow: initial;
+}
+.item-inner {
+  flex-direction: row-reverse;
+}
+.visibility {
+  padding-right: 10px;
+  color: #555555;
+}

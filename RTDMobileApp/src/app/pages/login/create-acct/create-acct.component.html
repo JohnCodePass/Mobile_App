@@ -1,0 +1,57 @@
+
+
+<ion-content>
+  <ion-grid class="bg">
+    <ion-row class="ion-justify-content-center">
+      <img class="center marginTopimg" style="width: 60%" src="./assets/icon/RTDLogo.png">
+      <ion-col size="10" class="ion-text-center marginTop">
+        <h4 class="createAcctFont" >Create Account</h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center ">
+      <ion-col size="10">
+        <ion-label for="userName" class="labelFont">
+          Username*
+        </ion-label>
+        <ion-input class="formBg labelSpacing" type="text" placeholder="Username" id="firstName"></ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label for="email" class="labelFont">
+          Email*
+        </ion-label>
+        <ion-input class="formBg labelSpacing" type="text" placeholder="Email" id="lastName"></ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label for="password" class="labelFont">
+          Password*
+        </ion-label>
+        <ion-input class="formBg labelSpacing item-inner" [type]="fieldTextTypePW ? 'password' : 'text'" ng-model="password" placeholder="Password">
+          <span *ngIf="fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility_off</span>
+          <span *ngIf="!fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility</span>
+        </ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label for="email" class="labelFont">
+          Re-Enter Password*
+        </ion-label>
+        <ion-input class="formBg labelSpacing item-inner" [type]="fieldTextTypePW ? 'password' : 'text'" ng-model="password" placeholder="Re-Enter Password">
+          <span *ngIf="fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility_off</span>
+          <span *ngIf="!fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility</span>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-justify-content-center topFormSpacing">
+      <ion-col size="10">
+        <ion-button style="height:45px" expand="block" class="font22 btnradius marginTop">Reset Password
+        </ion-button>
+      </ion-col>
+      <ion-col size="10" class="ion-text-center ">
+        <h4 class="cancelAcctFont" (click)="goToLoginPage()">Cancel Account Creation</h4>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

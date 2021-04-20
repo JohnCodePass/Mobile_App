@@ -1,0 +1,75 @@
+<ion-header>
+  <app-nav></app-nav>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="center">
+        <h1><u>My Places</u></h1>
+      </ion-col>
+      <ion-col size="12" class="center">
+        <ion-icon class="ionicon" name={{iconName}}></ion-icon>
+        <p class="font20"><b>{{favorite}}</b></p>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class=" mx-1 mt-4">
+      <ion-col size="6" class="p-0">
+        <h2 class="pink mb-0 p-0">Bus Stop</h2>
+      </ion-col>
+
+      <ion-col (click)="editMe()" size="6" class="marTop22 mb-0 p-0 end">
+        Edit
+        <ion-icon name="pencil-sharp" class="ml-1 font-15"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-button class="mb-4" expand="block" fill="outline">{{favBus}}</ion-button>
+
+    <ion-row>
+      <ion-col size="12" class="center">
+        <ion-button class="button-size">
+          <ion-grid>
+            <ion-row>
+            <ion-col size="12" class="center p-0">
+              1-Ride
+            </ion-col>
+            <ion-col size="12" class="center p-0">
+              ${{oneRidePrice}}
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-button>
+        
+        <ion-button class="button-size">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12" class="center p-0">
+                Day Pass
+              </ion-col>
+              <ion-col size="12" class="center p-0">
+                ${{dayPassPrice}}
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="12" class="center">
+        <ion-button class="button-size">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12" class="center p-0">
+                Month Pass
+              </ion-col>
+              <ion-col size="12" class="center p-0">
+                ${{monthPassPrice}}
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-button>
+      </ion-col>
+      </ion-row>
+        
+      </ion-grid>
+</ion-content>

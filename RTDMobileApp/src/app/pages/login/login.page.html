@@ -1,9 +1,58 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="loginBG">
+  <ion-grid *ngIf="showMe">
+    <ion-row class="center">
+      <img class="center marginTopimg" style="width: 60%" src="./assets/icon/RTDLogo.png">
+      <ion-col size="10">
+        <ion-input class="bg borderRadius input font21 marginTop" placeholder="Email"></ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input class="bg borderRadius input font21 marginTop3 item-inner"
+          [type]="fieldTextType ? 'password' : 'text'" ng-model="password" placeholder="Password">
+          <span *ngIf="fieldTextType" (click)="toggleFieldTextType()"
+            class="material-icons visibility">visibility_off</span>
+          <span *ngIf="!fieldTextType" (click)="toggleFieldTextType()"
+            class="material-icons visibility">visibility</span>
+        </ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-button style="height:45px" expand="block" color="primary" class="font22 borderRadius marginTop3"
+          (click)="goToAdmin()">Log In
+        </ion-button>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label (click)="hideComponent()" class="center marginTop3 font18 forgotpw">forgot password?</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label class="center marginTop font18">dont have an account?</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label class="center font21 create" routerLink='createAcct'>Create Account</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngIf="!showMe">
+    <ion-row class="center">
+      <img class="center marginTopimg" style="width: 60%" src="./assets/icon/RTDLogo.png">
+      <ion-col size="8">
+        <ion-label class="center marginTop font18">Please enter the email associated to your account.
+        </ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input class="bg borderRadius input font21 marginTop3" placeholder="Email"></ion-input>
+      </ion-col>
+      <ion-col size="10">
+        <ion-button style="height:45px" expand="block" class="font22 borderRadius marginTop3">Reset Password
+        </ion-button>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label (click)="hideComponent()" class="center font18 marginTop3 forgotpw">Cancel Password Reset</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label class="center marginTop font18">dont have an account?</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-label class="center font21 create" (click)="hideComponent()" routerLink='createAcct'>Create Account</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
