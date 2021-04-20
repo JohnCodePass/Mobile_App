@@ -14,19 +14,19 @@
         <ion-label for="userName" class="labelFont">
           Username*
         </ion-label>
-        <ion-input class="formBg labelSpacing" type="text" placeholder="Username" id="firstName"></ion-input>
+        <ion-input class="formBg labelSpacing" type="text" placeholder="Username" #username></ion-input>
       </ion-col>
       <ion-col size="10">
         <ion-label for="email" class="labelFont">
           Email*
         </ion-label>
-        <ion-input class="formBg labelSpacing" type="text" placeholder="Email" id="lastName"></ion-input>
+        <ion-input class="formBg labelSpacing" type="text" placeholder="Email" #email></ion-input>
       </ion-col>
       <ion-col size="10">
         <ion-label for="password" class="labelFont">
           Password*
         </ion-label>
-        <ion-input class="formBg labelSpacing item-inner" [type]="fieldTextTypePW ? 'password' : 'text'" ng-model="password" placeholder="Password">
+        <ion-input class="formBg labelSpacing item-inner" [type]="fieldTextTypePW ? 'password' : 'text'" ng-model="password" placeholder="Password" #password>
           <span *ngIf="fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility_off</span>
           <span *ngIf="!fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility</span>
         </ion-input>
@@ -35,7 +35,7 @@
         <ion-label for="email" class="labelFont">
           Re-Enter Password*
         </ion-label>
-        <ion-input class="formBg labelSpacing item-inner" [type]="fieldTextTypePW ? 'password' : 'text'" ng-model="password" placeholder="Re-Enter Password">
+        <ion-input class="formBg labelSpacing item-inner" [type]="fieldTextTypePW ? 'password' : 'text'" ng-model="password" placeholder="Re-Enter Password" #confirmPassword>
           <span *ngIf="fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility_off</span>
           <span *ngIf="!fieldTextTypePW" (click)="toggleFieldTextTypePW()" class="material-icons visibility">visibility</span>
         </ion-input>
@@ -45,7 +45,7 @@
 
     <ion-row class="ion-justify-content-center topFormSpacing">
       <ion-col size="10">
-        <ion-button style="height:45px" expand="block" class="font22 btnradius marginTop">Reset Password
+        <ion-button (click)="addUser(username.value, email.value, password.value, confirmPassword.value)" style="height:45px" expand="block" class="font22 btnradius marginTop">Create Account
         </ion-button>
       </ion-col>
       <ion-col size="10" class="ion-text-center ">
