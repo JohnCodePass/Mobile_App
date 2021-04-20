@@ -11,9 +11,14 @@ ion-content{
 p, h1, h3 {
     font-family: 'Nunito', sans-serif;
     color:#004e99;
+    text-decoration: underline;
 }
 
-h5{
-    color: #b61e8d;
+h5{ 
     text-decoration: underline;
+}
+
+img{
+    border: #004e99;
+    border-radius: 10px;
 }
