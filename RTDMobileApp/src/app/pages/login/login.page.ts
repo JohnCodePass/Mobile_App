@@ -19,5 +19,9 @@ export class LoginPage implements OnInit {
   toggleFieldTextType() {
     this.fieldTextType = !this.fieldTextType;
   }
+  goToAdminPage() {
+    this.router.navigateByUrl('AdminAcct');
+
+  }
 
 }
