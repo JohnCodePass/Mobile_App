@@ -15,10 +15,14 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-button (click)="presentModal()"></ion-button>
+      <ion-col class="center">
+        <ion-button (click)="presentRouteModal()">Bus Routes</ion-button>
+      </ion-col>
+      <ion-col class="center">
+        <ion-button (click)="presentTripModal()"> Trip Planner</ion-button>
       </ion-col>
     </ion-row>
+    
   </ion-grid>
 <ion-button routerLink="/favorites-main">Favorites Main</ion-button>
 <ion-button routerLink="/favorites-results">Favorites Results</ion-button>
