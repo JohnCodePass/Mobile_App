@@ -14,7 +14,7 @@ import { CreateAcctComponent } from './pages/login/create-acct/create-acct.compo
 @NgModule({
   declarations: [AppComponent, CreateAcctComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, NgbModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, NgbModule, NavComponent],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

@@ -3,6 +3,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size=12 class="center">
+        <!-- This is where the google map can go. -->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="center">
+        <ion-label>Destination/Schedule</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="presentModal()"></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 <ion-button routerLink="/favorites-main">Favorites Main</ion-button>
 <ion-button routerLink="/favorites-results">Favorites Results</ion-button>
 <ion-button routerLink="/favorites-new">Favorites New</ion-button>

@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'info',
     loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
+  },  {
+    path: 'modal-route',
+    loadChildren: () => import('./pages/modal-route/modal-route.module').then( m => m.ModalRoutePageModule)
   },
+
 
 ];
 
